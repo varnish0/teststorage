@@ -1,7 +1,5 @@
 <?php
 
-test('the application returns a successful response', function () {
-    $response = $this->get('/');
-
-    $response->assertStatus(200);
+test('the home page redirects to the photo gallery', function () {
+    $this->get('/')->assertRedirect('/photos');
 });

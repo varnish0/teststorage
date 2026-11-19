@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Doc extends Model
 {
-    public
+    protected $fillable = ['name', 'doc_path'];
 }
